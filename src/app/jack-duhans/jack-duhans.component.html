@@ -1,0 +1,28 @@
+<mat-grid-list cols="3" rowHeight="2:1" fxLayout="row">
+    <mat-grid-tile fxFlex="33%">
+      <div class="card" [ngClass]="{
+        'REDduhans': duhansSuit === 'hearts' || duhansSuit === 'diamonds',
+        'BLACKduhans': duhansSuit === 'spades' || duhansSuit === 'clubs'
+      }">
+        <h2 class="title">{{ duhansTitle }}</h2>
+      </div>
+    </mat-grid-tile>
+  
+    <mat-grid-tile fxFlex="33%">
+      <img mat-card-image src="assets/images/{{duhansImage}}" [id]="duhansSuit" class="imagesizes">
+    </mat-grid-tile>
+  
+    <mat-grid-tile fxFlex="33%">
+      <div class="button-group" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        &nbsp;&nbsp;&nbsp;
+        <button mat-stroked-button color="primary" class="button-margin" (click)="duhansRotate(duhansSuit, duhansDegree)">
+          Click to turn Card {{ duhansDegree }} degrees
+        </button>
+        <div style="height: 1em"></div>
+        <button mat-stroked-button color="primary" (click)="duhansRotate(duhansSuit, duhansZero)">
+          Click to turn Card Back to {{duhansZero}} degrees
+        </button>
+      </div>
+  
+    </mat-grid-tile>
+  </mat-grid-list>

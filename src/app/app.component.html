@@ -1,0 +1,18 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<app-header-duhans [HFduhans]="profileDuhans"></app-header-duhans>
+<mat-toolbar [ngStyle]="{textAlign: 'centre', display: 'flex', justifyContent: 'space-between'}">
+  <a class="spacer" routerLink="/ace">
+    <button mat-raised-button color="primary">Ace of Spades</button>
+  </a>
+  <a class="spacer" routerLink="/king">
+    <button mat-raised-button color="primary">KING of Diamonds</button>
+  </a>
+  <a class="spacer" routerLink="/queen">
+    <button mat-raised-button color="primary">Queen of Hearts</button>
+  </a>
+  <a class="spacer" routerLink="/jack">
+    <button mat-raised-button color="primary">Jack of Clubs</button>
+  </a>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<app-footer-duhans [HFduhans]="profileDuhans"></app-footer-duhans>

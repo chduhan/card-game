@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h3{
+    background-color: rgb(21, 140, 231); text-align: center; color: white;
+}
+ 
+.title {
+    font-size: 24px;  
+  }
+.REDduhans {
+    color: crimson;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5em;
+  }
+  .BLACKduhans {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5em;
+  }
+ 
+    
+  @media screen and (orientation: landscape) {
+    .imagesizes {
+        max-width: 30%;
+        height: auto;
+    }  
+}
+
+@media screen and (orientation: portrait) {
+    .imagesizes {
+        width: auto;
+        max-height: 100%;
+    }  
+}
