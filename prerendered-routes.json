@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/",
+    "/ace",
+    "/jack",
+    "/king",
+    "/queen"
+  ]
+}
